@@ -1,0 +1,20 @@
+.wrapper{
+    max-width: 70rem; /*1120 do figma /16px padrão = 70*/
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-star;
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 87.5%; /*queria 14px, mas 14px é bruto, e isso não dá a possibilidade pro usuário alterar, então fazendo a regra de 3, sabendo que o 100% é 16px (padrão), dá isso*/
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr; /*assim meu grid não tem mais duas colunas, mas apenas uma*/
+    }
+}
