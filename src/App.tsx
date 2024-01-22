@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Post, PostType } from './components/Post'
 import { Header } from './components/Header'
 import { Sidebar } from './components/Sidebar'
